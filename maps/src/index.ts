@@ -1,7 +1,10 @@
 import { User } from './User';
 import { Company } from './Company';
+import { CustomMap } from './CustomMap';
 
-// Google api key: AIzaSyD4JUUFnIFIZ5mgcF5uWs5XncIxnQiVg6g 
+const customMap = new CustomMap('map');
 const user = new User();
 const company = new Company();
-console.log(user, company);
+
+customMap.addMarker(user);
+customMap.addMarker(company);
